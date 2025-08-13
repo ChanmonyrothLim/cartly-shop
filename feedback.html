@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce</title>
+  <link rel="stylesheet" href="feedback.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title"> <a href="home.html" style="color: black; text-decoration:none">Cartly </a></h1>
+    <div>
+      <nav class="navigation">
+        <a href="home.html"><img class="logo" src="./img/logo.png "></a>
+
+        <ul class="list">
+          <li class="home"><a href="home.html" >Home</a></li>
+          <li class="menu"><a href="menu.html">Menu</a></li>
+          <li class="aboutus"><a href="aboutus.html">About us</a></li>
+          <li class="feedback"><a href="feedback.html"style="color: white; font-size: 25px;">Feedback</a></li>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+<div class="content">
+    <h2>Your Feedback Matters</h2>
+    <p>Help us improve your shopping experience</p>
+    
+    <div class="feedback-form">
+        <h2>Share Your Thoughts</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="feedback">General Feedback</option>
+                    <option value="product">Product Feedback</option>
+                    <option value="service">Customer Service</option>
+                    <option value="suggestion">Suggestion</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+    
+    <div class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="quote">"Cartly has transformed my shopping experience. The product quality is exceptional and delivery is always on time!"</p>
+                <div class="author">
+                    
+                    <div class="author-info">
+                        <h4>James Wilson</h4>
+                        <p>Regular Customer since 2023</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <p class="quote">"The customer service team went above and beyond to resolve my issue. I'm impressed with their dedication."</p>
+                <div class="author">
+                    
+                    <div class="author-info">
+                        <h4>Maria Garcia</h4>
+                        <p>First-time Customer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <p class="quote">"Great selection of products at competitive prices. I always check Cartly first before shopping elsewhere."</p>
+                <div class="author">
+                    
+                    <div class="author-info">
+                        <h4>David Kim</h4>
+                        <p>Tech Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+      <p>© 2025 Cartly. All Rights Reserved.</p>
+      <p>Contact us: cartly@gmail.com</p>
+    </footer>
+</body>
+
+</html>

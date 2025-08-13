@@ -1,0 +1,307 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh; 
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.title {
+    margin-top: 0px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.navigation {
+    background-color: rgb(221, 231, 240);
+    border-radius: 10px;
+    height: auto;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo {
+    width: 80px;
+    margin-top: 15px;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+}
+
+
+
+.logo:hover {
+    width: 90px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+    transition: all 0.25s ease-in, color 0.5s ease-out, font-size 0.5s ease-out, font-weight 0.5s ease-out;
+}
+
+.list li a:hover {
+    color: rgb(105, 100, 100);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.list li a.active {
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-size: 20px;
+    color: rgb(105, 100, 100);
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+.banner {
+    height: 400px;
+    background: linear-gradient(120deg, #2f2f2f 50%, #0096ff 50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 25px;
+    padding-left: 150px;
+}
+
+.banner .text {
+    max-width: 50%;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+.banner .button {
+    background-color: #0096ff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out, font-size 0.5s ease-out;
+}
+
+.banner .button:hover {
+    font-size: 22px;
+    box-shadow: 0px 0px 10px #0096ff;
+}
+
+.products img {
+    height: 200px;
+    margin-left: 20px;
+    transition: all 0.25s ease-in-out, transform 0.5s ease-out;
+}
+
+.products img:hover {
+    transform: scale(1.1);
+
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+
+.feedback-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #0096ff;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.rating input:checked ~ label,
+.rating input:hover ~ label {
+    color: #ffc107;
+}
+
+.submit-btn {
+    background-color: #0096ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #007acc;
+    transform: translateY(-2px);
+}
+
+.testimonials {
+    margin: 60px auto;
+    max-width: 1000px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .quote {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.testimonial-card .author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-card .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    margin: 0;
+    color: #333;
+}
+
+.author-info p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 14px;
+}
